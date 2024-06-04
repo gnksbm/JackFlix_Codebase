@@ -9,21 +9,26 @@
 /* Begin PBXBuildFile section */
 		BEDE2D152C0F076D00700601 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE2D142C0F076D00700601 /* AppDelegate.swift */; };
 		BEDE2D172C0F076D00700601 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE2D162C0F076D00700601 /* SceneDelegate.swift */; };
-		BEDE2D192C0F076D00700601 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE2D182C0F076D00700601 /* ViewController.swift */; };
+		BEDE2D192C0F076D00700601 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE2D182C0F076D00700601 /* TabBarController.swift */; };
 		BEDE2D1C2C0F076D00700601 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BEDE2D1B2C0F076D00700601 /* Base */; };
 		BEDE2D1E2C0F076F00700601 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEDE2D1D2C0F076F00700601 /* Assets.xcassets */; };
 		BEDE2D212C0F076F00700601 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BEDE2D202C0F076F00700601 /* Base */; };
+		BEDE2D292C0F09EA00700601 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE2D282C0F09EA00700601 /* HomeViewController.swift */; };
+		BEDE2D2B2C0F09F100700601 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE2D2A2C0F09F100700601 /* SignUpViewController.swift */; };
+		BEDE2D322C0F0DE300700601 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = BEDE2D312C0F0DE300700601 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BEDE2D112C0F076D00700601 /* JackFlix_Codebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JackFlix_Codebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEDE2D142C0F076D00700601 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEDE2D162C0F076D00700601 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BEDE2D182C0F076D00700601 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BEDE2D182C0F076D00700601 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		BEDE2D1B2C0F076D00700601 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BEDE2D1D2C0F076F00700601 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BEDE2D202C0F076F00700601 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BEDE2D222C0F076F00700601 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEDE2D282C0F09EA00700601 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		BEDE2D2A2C0F09F100700601 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEDE2D322C0F0DE300700601 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +62,49 @@
 		BEDE2D132C0F076D00700601 /* JackFlix_Codebase */ = {
 			isa = PBXGroup;
 			children = (
+				BEDE2D2F2C0F0DA200700601 /* Sources */,
+				BEDE2D2E2C0F0D9B00700601 /* Resources */,
+			);
+			path = JackFlix_Codebase;
+			sourceTree = "<group>";
+		};
+		BEDE2D2C2C0F09F500700601 /* App */ = {
+			isa = PBXGroup;
+			children = (
 				BEDE2D142C0F076D00700601 /* AppDelegate.swift */,
 				BEDE2D162C0F076D00700601 /* SceneDelegate.swift */,
-				BEDE2D182C0F076D00700601 /* ViewController.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		BEDE2D2D2C0F09FA00700601 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BEDE2D182C0F076D00700601 /* TabBarController.swift */,
+				BEDE2D282C0F09EA00700601 /* HomeViewController.swift */,
+				BEDE2D2A2C0F09F100700601 /* SignUpViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BEDE2D2E2C0F0D9B00700601 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				BEDE2D1A2C0F076D00700601 /* Main.storyboard */,
 				BEDE2D1D2C0F076F00700601 /* Assets.xcassets */,
 				BEDE2D1F2C0F076F00700601 /* LaunchScreen.storyboard */,
 				BEDE2D222C0F076F00700601 /* Info.plist */,
 			);
-			path = JackFlix_Codebase;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BEDE2D2F2C0F0DA200700601 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				BEDE2D2C2C0F09F500700601 /* App */,
+				BEDE2D2D2C0F09FA00700601 /* View */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +123,9 @@
 			dependencies = (
 			);
 			name = JackFlix_Codebase;
+			packageProductDependencies = (
+				BEDE2D312C0F0DE300700601 /* SnapKit */,
+			);
 			productName = JackFlix_Codebase;
 			productReference = BEDE2D112C0F076D00700601 /* JackFlix_Codebase.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +154,9 @@
 				Base,
 			);
 			mainGroup = BEDE2D082C0F076D00700601;
+			packageReferences = (
+				BEDE2D302C0F0DE300700601 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = BEDE2D122C0F076D00700601 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +184,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEDE2D192C0F076D00700601 /* ViewController.swift in Sources */,
+				BEDE2D192C0F076D00700601 /* TabBarController.swift in Sources */,
 				BEDE2D152C0F076D00700601 /* AppDelegate.swift in Sources */,
 				BEDE2D172C0F076D00700601 /* SceneDelegate.swift in Sources */,
+				BEDE2D292C0F09EA00700601 /* HomeViewController.swift in Sources */,
+				BEDE2D2B2C0F09F100700601 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +342,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ASU4PNB5MG;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = JackFlix_Codebase/Info.plist;
+				INFOPLIST_FILE = JackFlix_Codebase/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -322,7 +370,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ASU4PNB5MG;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = JackFlix_Codebase/Info.plist;
+				INFOPLIST_FILE = JackFlix_Codebase/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -363,6 +411,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BEDE2D302C0F0DE300700601 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BEDE2D312C0F0DE300700601 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BEDE2D302C0F0DE300700601 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BEDE2D092C0F076D00700601 /* Project object */;
 }
